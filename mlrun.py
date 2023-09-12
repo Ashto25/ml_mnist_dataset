@@ -39,10 +39,7 @@ model.compile(optimizer='adam',
 
 # start a new wandb run to track this script
 wandb.init(
-    # set the wandb project where this run will be logged
     project="handwriting_test",
-    
-    # track hyperparameters and run metadata
     config={
     "learning_rate": 0.02,
     "architecture": "CNN",
